@@ -1,0 +1,21 @@
+from  PIL import Image, ImageDraw, ImageFont
+
+image = Image.open('chad-montano-lP5MCM6nZ5A-unsplash.jpg')    # downloaded and image form random taco website and inserted here
+
+image.thumbnail((800, 800))                  # create and image thumbnaill no longer than 8000 or less
+image.save('chad-montano-lP5MCM6nZ5A-unsplash.jpg')         # in the here i just saved the image so that it prints
+
+
+
+draw.rectangle([200, 550, 20, 500], outline='red', width=5)     # setting th4 with to 5 and red outline
+
+font = ImageFont.truetype('DejaVuSans.ttf', 25) # downloaded this from the website so that i can have the image font
+
+# image font type, 25    # i picked size 25 you can pick any number but i just picked that
+
+
+draw.text([10, 475],'Random Taco Cookbook', fill='dark', font=font)     # drawing text and putting 10 47 Random taco cookbook on the test so it shows on the picture
+
+
+image.show()   # at the end i used image.show to close so that it shows my work when it prints
+image.save('Random Taco Cookbook.jpeg')  #  never forget to save your image after finish. i saved my imaage rondom taco cookbook
